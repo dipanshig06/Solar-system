@@ -1,0 +1,113 @@
+/* style.css */
+
+/* style.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+#ui-panel {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10;
+}
+
+#controls label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+#controls input[type='range'] {
+  width: 150px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #f1e90b;
+  color: rgb(12, 12, 12);
+  border: 1px solid #555;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #56f905;
+}
+
+select {
+  padding: 6px 10px;
+  background-color: #f1e90b;
+  color: rgb(12, 12,12);
+  border: 1px solid #555;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+select:hover {
+  background-color: white;
+}
+
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Tooltip that appears when hovering over a planet */
+.tooltip {
+  position: absolute;
+  background: #222;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  pointer-events: none;
+  display: none;
+}
+
+/* Media queries for responsive UI */
+@media (max-width: 768px) {
+  #ui-panel {
+    top: 10px;
+    left: 10px;
+    gap: 8px;
+  }
+
+  #controls label {
+    font-size: 12px;
+  }
+
+  button,
+  select {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  #controls input[type='range'] {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  #controls input[type='range'] {
+    width: 100px;
+  }
+
+  button,
+  select {
+    width: 100%;
+  }
+}

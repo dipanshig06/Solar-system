@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced Solar System</title>
+  <link rel="stylesheet" href="style.css" /> 
+</head>
+<body>
+
+  <!-- UI panel containing planet controls, toggle buttons, and dropdown -->
+  <div id="ui-panel">
+
+    <!-- Planet speed sliders will be dynamically added here -->
+    <div id="controls"></div>
+
+    <!-- Toggle animation button (Pause/Resume) -->
+    <button id="toggleAnimation">Pause</button>
+
+    <!-- Dropdown to focus camera on selected planet -->
+    <select id="focusSelect">
+      <option value="Sun">Sun</option>
+      <option value="Mercury">Mercury</option>
+      <option value="Venus">Venus</option>
+      <option value="Earth">Earth</option>
+      <option value="Mars">Mars</option>
+      <option value="Jupiter">Jupiter</option>
+      <option value="Saturn">Saturn</option>
+      <option value="Uranus">Uranus</option>
+      <option value="Neptune">Neptune</option>
+    </select>
+  </div>
+
+   <!-- Canvas where the 3D solar system will be rendered -->
+  <canvas id="solarCanvas"></canvas>
+
+   <!-- GSAP Library (used for smooth animations like camera zoom) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <!-- Three.js Library (for 3D rendering) -->
+  <script src="https://unpkg.com/three@0.152.2/build/three.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
