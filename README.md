@@ -3,6 +3,8 @@
 
 A fully interactive, mobile-responsive 3D simulation of the solar system built using Three.js, JavaScript, and GSAP, allowing users to explore planets, control orbital speeds, and toggle between dark and light themes.
 
+# for all 'Textures' go to this link:
+https://drive.google.com/drive/folders/1RiYPNmrPP1-ek_Uc5RWcDloZk2vGWQQd?usp=sharing
 
 # 🚀 Features
 
